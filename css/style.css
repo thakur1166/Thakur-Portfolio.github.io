@@ -1,0 +1,388 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	line-height: 1.4;
+	    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
+}
+
+.container {
+	max-width: 1150px;
+}
+
+header {
+	background: transparent;
+	z-index: 99;
+	position: absolute;
+    width: 100%;
+	padding-top:20px;
+	transition: 1s;
+}
+header.header_fixed {
+    position: fixed;
+    background: #000;
+    top: 0;
+}
+.header_fixed .logo_hide {
+    visibility: hidden;
+}
+.header_fixed .navbar {
+    position: absolute;
+    width: 40%;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -10px);
+}
+header:hover{
+		background: #000;
+	}
+}
+
+header .logo{
+	height: 36px;
+	object-fit: contain:
+}
+
+header .navbar-nav li a{
+	color: #DFDFDF !important;
+	font-size:15px;
+}
+ header a{
+	color: #fff !important;
+}
+header .navbar-nav li a.active{
+	color: #fff !important;
+	font-weight: 600;
+}
+.custom-btn{
+	background: rgba(0, 0, 0, 0.4);
+	border: 1px solid #FFFFFF;
+	font-size: 15px;
+    min-width: 180px;
+    padding: 15px 45px;
+    line-height: 1;
+}
+.custom-btn:hover{
+	background: #fff;
+	border: 1px solid #FFFFFF;
+}
+.btn-fill{
+	background: #000;
+	border: 1px solid #000;
+	font-size: 14px;
+    min-width: 120px;
+    padding: 11px 30px;
+    line-height: 1;
+}
+.btn-fill:hover{
+	background: #fff;
+	border: 1px solid #000;
+}
+/*slider Section */
+.slider .carousel-caption{
+	    top: 50% !important;
+}
+.slider .carousel-caption h1, .slider .carousel-caption p{
+	 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+.btns-group{
+	margin-top:32px;
+}
+.slider img{
+		min-height:730px;
+		object-fit: cover;
+		object-position: center;
+	}
+.slider h1{
+	font-size:31px;
+}
+.slider .carousel-indicators [data-bs-target]{
+	width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.product-slider{
+	background:#F3F3F1;
+}
+.product-slider .carousel-caption{
+	position: unset;
+}
+.product-slider .carousel-caption h2{
+	font-size:26px;
+	color:#000;
+	margin-bottom:15px;
+}
+.product-slider .carousel-item img{
+	height:527px;
+	object-fit: contain;
+}
+
+.product-slider .carousel-control-prev i, .product-slider .carousel-control-next i{
+	    filter: invert(1);
+}
+
+.py-50{
+	padding-top:50px;
+	padding-bottom:50px;
+}
+.best-seller .row{
+	background: #F2F2F2;
+}
+
+.best-seller .title_border_left{
+	position:relative;
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.best-seller .title_border_left::after{
+	content:'';
+	position:absolute;
+	border-bottom: 3px solid #000000;
+	width: 34px;
+    bottom: -10px;
+    left: 0;
+}
+
+.best-seller .row img{
+		height: 698px;
+		object-fit: cover;
+		transition: 1s;
+	}
+	.best-seller .row img:hover{
+		filter: brightness( 80% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
+	}
+.best-seller p{
+	font-size: 14px;
+}
+.title_border_center{
+	position:relative;
+	font-weight: 700;
+	font-size: 23px;
+	margin-bottom:40px;
+}
+.title_border_center::after{
+	content:'';
+	position:absolute;
+	border-bottom: 3px solid #000000;
+	width: 34px;
+	margin: 0 auto;
+    bottom: -10px;
+	left: 0;
+    right: 0;
+}
+
+.grid_item h3{
+	font-weight: 600;
+	font-size: 17px;
+}
+.grid_item a{
+	font-weight: 400;
+	font-size: 15px;
+	color: #ABABAB;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+.grid_item a:hover{
+	color: #000;
+}
+.grid_item a i{
+	font-size: 10px;
+	    margin-left: 2px;
+}
+.hovereffect{
+	position: relative;
+      overflow: hidden;
+}
+.story_img{
+	height: 362px;
+	object-fit: cover;
+	-webkit-transition:all .1s linear;
+	transition:all .4s linear;
+
+}
+.hovereffect:hover .story_img{
+	-ms-transform:scale(1.1);
+-webkit-transform:scale(1.1);
+transform:scale(1.1);
+}
+footer{
+	background: #1A1A1A;
+	color: #fff;
+	font-size:14px;
+	text-decoration: none;
+}
+footer h4{
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	color: #ADADAD;
+	margin-bottom: 24px;
+}
+footer .nav li a{
+	color: #FFFFFF;
+}
+footer .nav li a:hover{
+	color: #ADADAD;
+}
+footer .form-control:focus, footer .btn:focus, .btn:focus{
+	box-shadow: none !important;
+}
+footer .form-control, footer .btn{
+	min-height:41px;
+}
+
+.copyright-sec{
+	background: #0E0E0E;
+	color: #525252;
+}
+.copyright-sec p{
+	font-weight: 400;
+}
+.font-14px{
+	font-size:14px;
+}
+.font-13px{
+	font-size:13px;
+}
+
+@media screen and (min-width:992px){
+	header .navbar-nav li a{
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+	.right_menu li a{
+		padding: 5px 10px;
+		color: #000 !important;
+	}
+	.right_menu li a:hover, .right_menu li a:active{
+		color:#545454 !important;
+		/*background: #fff !important;*/
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+	.slider h1{
+		font-size:25px;
+	}
+	.slider img{
+		min-height:500px;
+	}
+	.best-seller{
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	.py-50{
+		padding-top:40px;
+		padding-bottom:40px;
+	}	
+	.product-slider .carousel-item img{
+		height: 400px;
+	}
+	
+	.best-seller .row img{
+		height: 450px;
+	}
+	.product-slider .carousel-caption h2{
+		font-size:20px;
+	}
+	.header_fixed .navbar {
+    top: 10px;
+	}
+
+}
+@media screen and (max-width:767px){
+	.slider h1{
+		font-size:22px;
+	}
+	.slider p{
+		font-size: 14px;
+	}
+	.slider img{
+		min-height:450px;
+	}
+	.slider .carousel-caption{
+		    left: 5%;
+			right: 5%;
+			top:30% !important;
+	}
+	.custom-btn, .btn-fill {
+    font-size: 14px;
+    min-width: 160px;
+    padding: 12px 30px;}
+	.py-50{
+		padding-top:30px;
+		padding-bottom:30px;
+	}
+	.product-slider .carousel-caption h2{
+		font-size:18px;
+	}
+	.product-slider .carousel-item img{
+		height: 270px;
+	}
+	.product-slider .carousel-control-prev i, .product-slider .carousel-control-next i{
+		width:20px;
+	}
+	.best-seller{
+		    max-width: 95%;
+			margin: 0 auto;	
+	}
+	.best-seller .row img{
+		height: 380px;
+		object-position: top;
+	}
+	
+	footer h4{
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width:991px){
+	.navbar{transition: 1s;} 
+	.navbar-collapse{
+		    /*background: #000;*/
+			margin-left: -15px;
+			margin-right: -15px;
+			padding: 10px 20px;
+			
+	}
+	header {
+    padding-bottom: 10px;
+	}
+}
+@media screen and (max-width:1024px){
+	header{
+		padding-top:10px;
+	}
+	header .logo{
+		height:30px;
+	}
+	.toggle_btn {
+    background-image: url('../images/toggle-icon.svg') !important;
+	background-repeat: no-repeat;
+    background-size: 25px;
+	}
+	.navbar-toggler:focus{
+		box-shadow: none;
+	}
+	
+	.grid_item a{
+		font-size:13px;
+	}
+	.grid_item h3 {
+		font-size: 16px;
+	}
+}
